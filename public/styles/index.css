@@ -74,6 +74,7 @@ body, html {
     font-size: 1.2vw;
     font-family: Qualy;
     color: #ced4da;
+    text-decoration: none;
 }
 
 .link {
