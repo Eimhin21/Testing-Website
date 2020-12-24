@@ -1,0 +1,284 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/*      FONTS    */
+
+@font-face {
+    font-family: Lequire;
+    src: url(fonts/Lequire.otf);
+}
+
+@font-face {
+    font-family: Awake;
+    src: url(fonts/I\ Am\ Awake.otf);
+}
+
+@font-face {
+    font-family: Qualy;
+    src: url(fonts/Qualy\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Timeless-Bold;
+    src: url(fonts/Timeless-Bold.ttf);
+}
+
+@font-face {
+    font-family: Timeless;
+    src: url(fonts/Timeless.ttf);
+}
+
+/*      Background Image        */
+
+.background-image {
+    background-image: url(/public/images/GraffitiImage.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*  The Header and Navigations  */
+
+.nav-container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 20px 40px 0px 40px;
+    color: #ced4da;
+
+    
+}
+
+.nav-btns {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+    
+}
+
+.nav-btn{ 
+    width: 33%;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 5px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    font-family: Qualy;
+    color: #ced4da;
+}
+
+.link {
+    position: relative;
+}
+
+.link:after {
+    content:'';
+    position: absolute;
+    width: 0; 
+    height: 3px;
+    display: block;
+    margin-top: 2px;
+    right: 0;
+    background: #fff;
+    transition: width .5s ease;
+    -webkit-transition: width .5s ease;
+}
+
+.link:hover:after {
+    width: 100%;
+    left: 0;
+
+}
+
+.main-title {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    font-family: Lequire;
+    color: #ced4da;
+}
+
+.main-title a {
+    text-decoration: none;
+    color: #ced4da; 
+}
+
+.social-btns {
+    grid-row: 1;
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+}
+
+.social-btn {
+    width: 33%;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 5px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    font-family: Qualy;
+    color: #ced4da;
+}
+
+.social-btn-underline:hover {
+    transition-duration: .5;
+    border-bottom: 3px solid #ced4da;
+    cursor: pointer;
+}
+
+.nav-btn-underline:hover {
+    transition-duration: .5;
+    border-bottom: 3px solid #ced4da;
+    cursor: pointer;
+}
+
+.nav-inquiries {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30vh;
+    box-shadow: #ced4da;
+}
+
+.inquiries-btn {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 20px 40px 20px 40px;
+    font-size: 2vw;
+    color: #ced4da;
+    border: 4px solid #73628a;
+    border-radius: 30px;
+    font-family: Qualy;
+    text-shadow: #ced4da;
+}
+
+.inquiries-btn:hover {
+    cursor: pointer;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background: #73628a;
+    color: black;
+    border: 4px solid transparent;
+    box-shadow: 1vw 2vh #3e1f47;
+}
+
+button:focus {
+    outline: 0;
+}
+
+/*  ABOUT SECTION   */
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 10vh 10vw 10vh 10vw;
+}
+
+.about-text-container {
+    width: 50%;
+    
+}
+
+.about-text-title {
+    font-size: 2.5vw;
+    font-family: Lequire;
+}
+
+.about-underline {
+    border-top: 4px solid black;
+    padding-top: 10px;
+}
+
+.about-text-paragraph {
+    padding-top: 1vh;
+    padding-left: 4vw;
+    padding-right: 6vw;
+    font-size: 1.25vw;
+    font-family: Timeless;
+}
+
+.about-image-container {
+    width: 50%;
+}
+
+.person-image-container {
+    width: 100%;
+    height: auto;
+    padding: 3.5vh;
+}
+
+.profile-picture img{
+    margin-left: 2%;
+    float: left;
+    height: 7.5vw;
+}
+
+.about-image-info {
+    width: 66%;
+    font-family: Qualy;
+}
+
+.about-name {
+    font-size: 2.5vw;
+    padding-left: 1vw;
+
+}
+.about-occupation {
+    font-size: 1.75vw;
+    padding-left: 1vw;
+}
+
+
+/*  FOOTER  */
+
+.footer-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: #3e1f47;
+}
+
+.footer-name {
+    font-family: Lequire;
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+    
+}
+
+.footer-nav {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.footer-name-a {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1vw;
+    font-family: Timeless;
+    color: white;
+}
+
+.footer-end {
+    text-align: center;
+    color: white;
+}
